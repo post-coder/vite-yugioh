@@ -25,8 +25,11 @@ export default {
   <div>
     <h1>Lista delle prime 50 carte di Yu-Gi-Oh</h1>
 
-    <div id="cards-list">
+    <div v-if="store.cards.length > 0 && !store.isLoading" id="cards-list">
       <CardItem v-for="(card, index) in store.cards" :card="card" :card-number="index+1"></CardItem>
+    </div>
+    <div v-else>
+      Non è stata trovata nessuna carta
     </div>
 
 

@@ -8,4 +8,11 @@ export const store = reactive({
   
   isLoading: true,
 
+  // memorizzo la stringa di ricerca base
+  APIbaseSearch: "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=200&offset=0",
+
+  // stringa predisposta ad accogliere il testo di ricerca inserito dall'utente
+  cardNameSearch: "",
+
+
 });

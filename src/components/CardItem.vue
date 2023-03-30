@@ -25,6 +25,9 @@ export default {
     <small v-if="card.card_sets">
       Rarità: {{ card.card_sets[0].set_rarity }}
     </small>
+    <small v-else>
+      <em>Rarità: sconosciuta</em> 
+    </small>
 
     <div class="card-number">
       {{ cardNumber }}
